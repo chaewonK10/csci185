@@ -1,0 +1,10 @@
+/* Your style rules here */
+  @import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+h1, h2{
+    font-family: 'Aboreto', cursive;
+}
+
+li{
+    font-family: 'Caveat', cursive;
+}

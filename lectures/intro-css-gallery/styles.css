@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Your code here */
+header{
+    background-color:beige;
+    padding: 30px;
+}
+
+main > section {
+    border: 1px black solid;
+    margin: 20px;
+    display:inline-block;
+    
+}
+
+section:hover {
+    transform: rotate(5deg);
+}
+
+main > section > p {
+    padding: 10px;
+}
+

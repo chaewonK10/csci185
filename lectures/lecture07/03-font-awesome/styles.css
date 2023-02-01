@@ -1,0 +1,15 @@
+/* Font Awesome version  6.2.1 */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css');
+
+
+.fa-solid {
+    font-size: 50px;
+}
+
+#coffee{
+    font-size: 100px; color:blue
+}
+
+.fa-heart{
+    font-size: 100px; color:red
+}
