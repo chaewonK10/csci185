@@ -1,13 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@600&display=swap');
 * {
     box-sizing: border-box;
 }
 
 body {
-    margin: 0px;
+    margin: 10px;
     font-family: Arial, sans-serif;
+    background-color: #BDD5EA;
 }
 
 p, a, li {
     line-height: 1.5em;
     font-size: 1.1em;
 }
+
+h1{
+    display: flex;
+    justify-content: center;
+    font-family: 'Shantell Sans', cursive;
+    font-size: 35pt;
+}
+
+main {
+    width: 100%;
+    margin: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+
+section {
+    border: solid 1px lightslategray;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+#quizzes>h2 {
+    background-color: #df8d76;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#tutorials>h2 {
+    background-color: #d8df76;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#homework>h2 {
+    background-color: #d48afc;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#inspiration>h2 {
+    background-color: #ffb67a;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#class-exercises>h2 {
+    background-color: #6fd978;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+
