@@ -34,7 +34,7 @@ body {
 }
 
 #portfolio {
-    height: 1080px;
+    height: 100vh;
     background-color: #CC5A71;
     color: white;
     display: flex;
@@ -44,7 +44,7 @@ body {
 }
 
 #contact {
-    height: 1080px;
+    height: 100vh;
     background-color: #C6D8AF;
     color: white;
     display: flex;
