@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 html {
     scroll-behavior: smooth;
 }
@@ -11,3 +12,207 @@ body {
 }
 
 /* Your CSS Code Here! */
+
+
+nav ul{
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    padding:10px;
+}
+nav a{
+    text-decoration: none;
+    padding: 15px;
+    color: white;
+}
+
+header{
+    background-color: #496F65;
+}
+
+header>div{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header img{
+    border-radius: 180px;
+}
+
+header h1{
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-size: 25pt;
+    font-weight: lighter;
+    letter-spacing: 3px;
+}
+
+#about{
+    margin: 170px;
+}
+
+#about h2{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+    font-size: 23pt;
+}
+
+#about p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:500;
+    color:rgb(101, 101, 101);
+}
+
+#projects{
+    background-color: rgb(229, 229, 229);
+    padding: 170px;
+}
+
+#projects h2{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+    font-size: 23pt;
+}
+
+
+.project-holder{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.card{
+    margin: 50px;
+}
+
+.card p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card img{
+    width: 100%;
+}
+
+#contact{
+    margin:170px;
+}
+
+#contact h2{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+    font-size: 23pt;
+}
+
+.contact-details{
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+
+#contact-info div{
+    display: flex;
+    align-items:first baseline;
+    color:rgb(101, 101, 101);
+}
+
+#contact-info i{
+    padding: 20px;
+    display:flex;
+    font-size: 12pt;
+}
+
+#name{
+    background-color: rgb(229, 229, 229);
+    border-color: transparent;
+    height: 6vh;
+    width: 38%;
+    border-radius: 5px;
+    margin-right: 5px;
+    margin-top: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+
+#email{
+    background-color: rgb(229, 229, 229);
+    border-color: transparent;
+    height: 6vh;
+    width: 58%;
+    border-radius: 5px;
+    margin-left: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+
+#message{
+    background-color: rgb(229, 229, 229);
+    border-color: transparent;
+    height: 16vh;
+    width: 98%;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+
+#submit{
+    background-color: #496F65;
+    color: white;
+    border-color: transparent;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+footer{
+    background-color: rgb(229, 229, 229);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 130px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media (max-width: 800px){
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #about{
+        margin:10px;
+    }
+
+    #projects{
+        padding: 10px;
+       
+    }
+
+    .project-holder{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #contact{
+        margin: 10px;
+    }
+
+    .contact-details{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #name{
+        width: 35%;
+    }
+
+    #email{
+        width:60%;
+    }
+
+}
