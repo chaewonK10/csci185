@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+body * {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header, main, footer {
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+header {
+    background-color: #013672;
+}
+
+header img, footer img {
+    width: 200px;
+}
+
+header {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+nav a{
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+h1, h2, h3 {
+    font-family: 'Passion One', cursive;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+h2{
+    margin-top: 70px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+
+.card {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    border: solid 1px lightgray;
+    padding: 15px;
+    column-gap: 10px;
+}
+
+div img{
+    width: 100%;
+}
+
+.card:hover{
+    transition: all 0.3s ease-out;
+    color:white;
+    background-color: #013672;
+}
+
+@media screen and (max-width: 800px) {
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+    }
+
+    nav{
+        display: none;
+    }
+}
