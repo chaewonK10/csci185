@@ -12,18 +12,7 @@ function setup() {
     */
 
     // https://p5js.org/reference/#/p5/circle
-    fill("#ffcc99")
-    circle(700, 300, 400); //(x, y, diameter)
-
-
-    fill("black")
-    circle(600, 300, 40); //(x, y, diameter)
-
-    fill("black")
-    circle(800, 300, 40); //(x, y, diameter)
-
-    fill("black")
-    circle(700, 400, 60); //(x, y, diameter)
+   
 
 
     // https://p5js.org/reference/#/p5/rect
@@ -32,10 +21,7 @@ function setup() {
 
     // add your drawing here:
     // https://p5js.org/reference/#/p5/point
-    point(600, 300);
-    point(800, 300);
-    stroke('black'); // Change the color
-    strokeWeight(100); // Make the points 10 pixels in size
+    // point(600, 300);
 
 
     // https://p5js.org/reference/#/p5/text
@@ -51,7 +37,19 @@ function setup() {
     
     // Curve: https://p5js.org/reference/#/p5/curve
 
+    drawCreature();
 
     // for debugging:
     drawGrid(canvasWidth, canvasHeight)
+}
+
+
+function drawCreature() {
+    fill("#ffcc99")
+    circle(700, 300, 400); //(x, y, diameter)
+
+    fill("black")
+    circle(600, 300, 40); //(x, y, diameter)
+    circle(800, 300, 40); //(x, y, diameter)
+    circle(700, 400, 60); //(x, y, diameter)
 }
