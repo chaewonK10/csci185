@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&family=Lora:wght@500&display=swap');
+
+/* main page */
+body{
+    background-image: url(background_pic.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header{
+    display:flex;
+    justify-content: center;
+    align-items:end;
+    font-family: 'Lora', serif;
+    font-size: 70pt;
+    height: 300px;
+    color: white;
+}
+
+main {
+    background-color: #F5D6BA;
+    border-radius: 50px;
+    padding: 100px;
+}
+
+section {
+    padding: 50px;
+    margin-top: 50px;
+}
+
+
+.images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    column-gap: 20px;
+
+}
+
+.img {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+    margin:10px;
+    border-radius: 25pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.img a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 35pt;
+    font-weight: 100;
+    
+}
+
+
+.patterns_videos {
+    background-image: url('patterns_videos.jpg');
+}
+
+.about_yarns {
+    background-image: url('about_yarns.jpg');
+}
+
+.beginners {
+    background-image: url('beginners.jpg');
+}
+
+.img:hover{
+    filter: brightness(30%);
+    transition: all 0.3s ease-out;
+}
+
+h2 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 40pt;
+}
+
+button{
+    background-color: #8E4162;
+    color:white;
+}
+
+
+footer{
+    padding: 50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -5,11 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="sketch.js" defer></script>
     <title>Yarn Lovers</title>
 </head>
 
 <body>
     <header>FOR ALL THE YARN LOVERS</header>
-    <main></main>
+    <!-- <img src="/project/background_pic.jpg" alt="background image with yarn patterns"> -->
+    <main>
+        <section id="menu">
+            <div class="images">
+                <div class="img patterns_videos">
+                    <a href="/project/pages/patterns_videos.html">Patterns/Videos</a>
+                </div>
+                <div class="img about_yarns">
+                    <a href="/project/pages/about_yarns.html">About Yarns</a>
+                </div>
+                <div class="img beginners"> 
+                    <a href="/project/pages/beginners.html">For Beginners</a>
+                </div>
+            </div>
+        </section>
+        <section id="row_counter">
+            <h2>Row Counter</h2>
+            <button onclick="numberUp()" class="up">up</button>
+            <button onclick="numberDown()" class="down">down</button>
+            <button onclick="reset()" class="reset">reset</button>
+        </section>
+    </main>
+    <footer>Copyright 2023</footer>
 </body>
 </html>
