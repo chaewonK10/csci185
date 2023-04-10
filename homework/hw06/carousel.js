@@ -19,7 +19,12 @@ let idx = 0;
 */
 function showImage() {
     console.log('Show image');
-    document.querySelector(".currentPhoto.img")
+    //1. target the img
+    //2. set the source to whatever img is stored in position idx
+    document.querySelector('.change-img').src = photos[idx];
+    let template = `
+                <p>Image ${[idx+1]} of ${photos.length}</p>`
+    document.querySelector('.caption').innerHTML= template;
 }
 
 
@@ -31,8 +36,16 @@ function showImage() {
 */
 function forward() {
     console.log('forward');
-}
+    showImage();
+    
+    if (idx == photos.length-1) {
+        idx = 0; 
+    }
 
+    else {
+        ++idx;
+}
+}
 
 /* This function should set the idx variable 
    to one less than the current value of idx, 
@@ -42,4 +55,15 @@ function forward() {
 */
 function back() {
     console.log('back');
+    showImage();
+    
+    if (idx == 0) {
+        idx = photos.length-1;
+        
+    }
+    else {
+        --idx;
+    }
+    
 }
+

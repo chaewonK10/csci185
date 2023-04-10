@@ -26,11 +26,17 @@
                 </div>
             </div>
         </section>
+        <h2>Row Counter</h2>
         <section id="row_counter">
-            <h2>Row Counter</h2>
-            <button onclick="numberUp()" class="up">up</button>
-            <button onclick="numberDown()" class="down">down</button>
-            <button onclick="reset()" class="reset">reset</button>
+            
+            <div class="counter">0</div>
+            <div class="up_down_buttons">
+                <button onclick="up()" class="up">^</button><br>
+                <button onclick="down()" class="down">v</button>
+            </div><br>
+            <div class="reset_button">
+                <button onclick="reset()" class="reset">reset</button>
+            </div>
         </section>
     </main>
     <footer>Copyright 2023</footer>
