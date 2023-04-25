@@ -27,17 +27,36 @@ fetchCourses();
 function search() {
     console.log(data);
     console.log(data[0].Title);
-    console.log(data[0].Instructors[0].Name)
-    document.querySelector('.courses').innerHTML = `
-        <section class="course">
-        <h2>${data[0].Code}: ${data[0].Title}</h2>
+    console.log(data[0].Instructors[0].Name);
+    document.querySelector('.courses').innerHTML
+   let i = 0;
+   const searchTerm = document.querySelector('#search_term').value;
+    while(i < data.length) {
+    
+    let instructor = 'TBD';
+    if (data[i].Instructors.length > 0) {
+        instructor = data[i].Instructors[0].Name;
+    }
+
+    //only show diversity intensive classes
+    if (data[i].Classification.DiversityIntensive === true || data[i].Classification.DiversityIntensiveR === true) {
+    //if(instructor.includes(searchTerm) || data[i].Title.includes(searchTerm)){
+        
+    //line of code that add a new element to the DOM;
+    document.querySelector('.courses').insertAdjacentHTML('beforeend', `
+    <section class="course">
+        <h2>${data[i].Code}: ${data[i].Title}</h2>
         <p>
-            ${data[0]}MWF &bull; ZEI 201 &bull; 3 credit hour(s)
+            ${data[i].Days} &bull; ${data[i].Location.FullLocation} &bull; ${data[i].Hours} credit hour(s)
         </p>
-        <p><strong>${data[0].Instructors[0].Name}</strong></p>
+        <p><strong>${instructor}</strong></p>
 </section>
-    `;
+    `);
+    }
+    i++;
+    }
+    
     // document.querySelector('.courses').innerHTML = data[0].Title + ' / ' + data[0].Instructors[0].Name;
     // document.querySelector('.courses').innerHTML = data[0].Instructors[0].Name;
-    const searchTerm = document.querySelector('#search_term').value;
+    // const searchTerm = document.querySelector('#search_term').value;
 }
