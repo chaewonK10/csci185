@@ -1,0 +1,9 @@
+What corrections did you have to make, and how did you make them?
+    Added language for the html. --> <html lang="en">
+    Added aria-label attributes in the search section. --> aria-label="search for artists or songs"
+
+Is this interface functional without the use of a mouse (i.e., just using keyboard keys)? Why or why not?
+    Yes. You can use tab key to select, search the song you want, and enter the song.
+
+What are other accessibility tests or features you added or would be interested in learning about?
+    I would be interested in learning how to add other options in the sidebar, such as, genre, country, 100 best songs, etc.
