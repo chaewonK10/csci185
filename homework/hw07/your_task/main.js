@@ -24,7 +24,7 @@ async function getTracks (term) {
     for(let i = 0; i < 5; i++) {
         const track = data[i];
         const template = `
-            <section class="track-item preview" onclick="loadTrack()">
+            <section class="track-item preview" onclick="loadTrack('${track.id}')">
                 <img src="${track.album.image_url}">
                 <i class="fas play-track fa-play" aria-hidden="true"></i>
                 <div class="label">
@@ -86,13 +86,13 @@ async function getArtist (term) {
     document.querySelector('#artist').innerHTML = template;
 };
 
- function loadTrack() {
+ function loadTrack(trackid) {
     const template = `
     <h1>Now Playing</h1>
     <section id="artist">
     
         <iframe style="border-radius:12px" 
-        src="https://open.spotify.com/embed/track/5y8d8RHvxb0KiTa9Nq0xWp?utm_source=generator" 
+        src="https://open.spotify.com/embed/track/${trackid}?utm_source=generator" 
         width="100%" 
         height="352" 
         frameBorder="0" 
